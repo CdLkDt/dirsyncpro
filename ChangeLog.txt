@@ -1,0 +1,967 @@
+Version 1.53
+- Improved:	Startup shell scripts for Linux and MacOS are now user executable in the download package.
+
+Version 1.53b5
+- Improved:	The enabled tabs in the filter dialog have now a green ball icon which help OSX users to distinguish them.
+- Improved:	Default window size for the filter dialog is optimized.
+- Added:		Filter by Date can now be configured to filter only files, only directories or both.
+
+Version 1.53b4
+- Improved:	Check for update is made ready to use HTTPS.
+- Improved:	Redirected some occasional stack trace print out (in case of an error) to the log files instead of the standard output.
+
+Version 1.53b3
+- Fixed:		Some typos
+- Fixed:		Issue when some include filters didn't work in combination with '*' include filter for directories.
+- Improved:	'\' is now allowed to be included in filter patterns.
+
+Version 1.53b2
+- Improved:	More Memory performance improvements on logging to the message table.  
+- Fixed:		Issue with the wild card in the log filenames.
+
+Version 1.53b1 
+- Improved:	Memory performance improvements on logging to the message table.  
+
+Version 1.53a1
+- Added:		Support for UTF-8 encoding when writing the logs.
+- Improved:	Some typo's are fixed!
+- Improved:	Renamed "Include subfolders" to "Traverse subfolders" to make the behavior clearer.
+- Improved:	Some minor performance improvements.
+- Improved:	The Java wrapper for windows will prefer the 64-bit version of JRE if available. 
+
+Version 1.52
+- Improved:	Some code cleaning.
+
+Version 1.52b1
+- Improved:	The config file is now being opened/saved using UTF-8 encoding.
+- Improved:	The enabled tabs in the job dialog have now a green ball icon which help OSX users to distinguish them.
+- Fixed:	The issue when a corrupted config file would cause the file meta data not being synchronized.	 
+
+Version 1.51
+- Fixed:	In some cases the Job dialog did not show the selected conflict resolution mode. Fixed! 
+
+Version 1.51b1
+- Fixed:	A typo in the application setting dialog.
+- Improved:	Some performance improvement for the file analysis (Thanks to Frank De Prins for the solution).  
+
+Version 1.51a1
+- Fixed:	Fixed the issue when the filter by time unit did not load correctly from a saved config file.
+- Fixed:	Fixed the issue when the command line generator did not add the right command option to the batch file.
+
+Version 1.50
+- Fixed:	One typo.
+
+Version 1.50a4
+- Fixed:	Fixed the issue when an I/O Error (like corrupted files) caused DirSync Pro to crash.
+- Fixed:	Fixed the issue when an I/O Error (like corrupted files) caused DirSync Pro GUI to freeze.
+
+Version 1.50a3
+- Fixed:	Fixed the issue when being unable to copy the timestamp caused a crash.
+
+Version 1.50a2
+- Fixed:	Fixed the issue when some include filters caused a crash.
+- Fixed:	Fixed the issue when 'Copy Larger' option did not get updated in the GUI after loading a jobset.
+- Fixed:	Fixed the issue when the day number in monthly schedules could not be higher than 12.
+
+Version 1.50a1
+- Fixed:	Fixed the issue when default filters got duplicated in some cases.
+- Fixed:	Fixed the issue when the delete files options was reset to true.
+- Fixed:	Fixed the issue when the log file was recording debug information when the log level was set to minimal.
+- Fixed:	Fixed the issue when the Time Unit did not get persisted for adding filters by Hours/Days/Months/... ago. 
+
+Version 1.49
+- Improved:	Analysis performance is enhanced a little more.
+
+Version 1.49a3
+- Improved:	Analysis performance is enhanced a little 
+- Improved:	Memory usage is reduced a little.
+ 
+Version 1.49a2
+- Fixed:	Adding a filter through the right mouse context menu in the sync queue table will clear the sync Q visually.
+- Fixed:	Saving an absolute path for a job log file is possible again.
+- Improved:	After adding a filter through the right mouse context menu in the sync queue table the user could choose not to reset the sync queue.
+
+Version 1.49a1
+- Fixed:	The job dialog did not show some filters properly. Fixed!
+- Fixed:	Some schedules could not be removed. Fixed!
+ 
+Version 1.48
+- Fixed:	Saving a brand new jobset caused an error. Fixed!   
+
+Version 1.47
+- Improved:	Some minor issues.
+
+Version 1.47b5
+- Fixed:	Issue with the filters while synchronizing disk roots (like c:\) in MS Windows..
+- Changed:	Comparing the file meta data is now only preserved to custom synchronization modes.
+- Improved:	Some visual enhancements.
+- Improved:	In case of multiple monitor, the open file chooser dialog will now open on the screen in which DirSync Pro is active. 
+
+Version 1.47b4
+- Fixed:	Fixed the bug making weekly schedules not updating 'next-event'..
+- Improved: The manual is updated.
+
+Version 1.47b3
+- Added:	Option in the settings dialog to start the Schedule Engine automatically upon startup.
+- Added:	Option to override the read-only attribute in the destination folder when copying/deleting files/dirs.
+- Improved:	Some performance enhancements.
+- Improved:	More debug info to the application log file.
+- Improved:	Emphasize the conflict files in monodirectional sync a bit more.
+
+Version 1.47b2
+- Fixed:	Crash in BI-Custom mode while analyzing some files..
+- Fixed:	Some minor sync issues in BI-directional sync algorithm.
+- Fixed:	Filters were not persisted in custom Bi-directional sync mode; fixed!.
+- Fixed:	It's now possible to pause the Analysis.
+- Improved:	Better icon lookup algorithm.
+- Improved:	Toolbar icons do not have any border in Mac OS X.
+- Improved:	Table grid color is enabled (in case it is disabled like in Mac OS X).
+- Improved:	Some minor changes to improve stability of the filters.
+- Improved:	Improved some texts in the GUI.
+
+Version 1.47b1
+- Fixed:	When using the command line, the /schedule option started the schedule engine but did not gray out the corresponding button int he GUI. Fixed!
+- Fixed:	Custom BI-directional sync mode did not function well all the time. Fixed!. 
+- Added:	Option in the Command Line Generator window to add /iconify to the generated command line (Feature request: Jim Buszkiewicz)
+- Changed:	DirSync Pro now loads the last opened config on start-up by default.
+
+Version 1.47a8
+- Fixed:	Some GUI improvements in the SyncQ (since 1.47a1). Fixed!
+- Fixed:	Modified files showed sometimes twice in the syncQ. (since 1.47a1) Fixed! 
+- Fixed:	Change to 'Force Copy B' works now properly!
+- Improved:	Changing an item in the sync queue will update the overall size statistics.
+- Improved:	The right click context menu to change the sync mode in the sync queue is now more context aware. 
+
+Version 1.47a7
+- Fixed:	Analysis of the non-recursive directories was not accurate (since 1.47a1). Fixed!.
+- Fixed:	Forced deletion of excluded files/directories did not delete some files in some cases. Fixed! 
+
+Version 1.47a6
+- Improved:	More debug information is written to the application log.
+
+Version 1.47a5
+- Added:	Drag & Drop feature for the source and destination folders. You can now simply drag a folder to the source/destination text fields (Feature request: Garry Benjamin).
+
+Version 1.47a5
+- Fixed:	Deletion analysis did not end up with correct results in some cases; this bug was introduced since 1.47a1. Fixed. 
+
+Version 1.47a4
+- Fixed:	Crash on analyzing a root source, introduced in 1.47a1.
+- Fixed:	Sync Q will not show an empty tooltip for not exisiting files.
+- Fixed:	Some minor issues in the GUI.
+- Added:	Number of bytes of the analyzed files is now also shown in the statistics (feature request: Wolfgang). 
+
+Version 1.47a3
+- Improved:	Cleaned up a little.
+
+Version 1.47a2
+- Fixed:	Crash on 'Analyze' introduced in 1.47a1.
+- Fixed:	Progress bar update issue introduced in 1.47a1.
+- Fixed:	The last column in the schedule table will resize upon resizing application window.
+- Fixed:	Double clicking a filter or a schedule in the job tree opens the job edit dialog and will not cause an exception anymore.
+- Added:	It is now possible to add unlimited number of schedule tasks instead of one per category (feature request: Bill Brehm). 
+ 
+Version 1.47a1
+- Fixed:	Exclude filter didn't filter files/dirs during the first run in some cases. Fixed!.
+- Fixed:	Slow scrolling of the synchronization queue is fixed while synchronizing massive number of files over the network.
+- Fixed:	The GUI was freezing or got less responsive in some cases. Fixed!.
+- Improved:	New algorith implemented to search for files which improves memory usage and speed.
+- Added:	Right click context menu 'Open' for the DirSync Pro system tray icon (feature request: Evert-Jan). 
+
+Version 1.46
+- Fixed:	The new compare mode 'Compare Contents' does not generate a warning on directories anymore.
+- Fixed:	Fixed the issue with the current progress bar did not get updated after the sync was finished.
+- Fixed:	Auto Shutdown did not function correctly in some cases. Fixed!
+- Fixed:	File pattern based on Regular Expression did not work properly in some conditions. Fixed!
+- Improved:	Sync queue context menu option to add filters based on file extensions checks now if the file actually has one.
+
+Version 1.46b3
+- Fixed:	Crash regarding the regular expression filter patterns bug since 1.46b2. Fixed!.
+- Known:	Manual is not updated yet
+
+Version 1.46b2
+- Added:	Realtime synchronization option. DirSync Pro can now watch the source directory continuously and initiate the synchronization when a change is detected. (Thanks to Mihail V. Beloshapkin for the patch)
+- Added:	It is now also possible to filter files based on some time unit, e.g. files older than 10 days ago. (Thanks to Piotr Kolacz for patch)
+- Known:	Manual is not updated yet
+
+Version 1.46b1
+- Fixed:	Some minor fixed.
+- Fixed:	The schedule did not start if a task was scheduled on Sunday. Fixed! (Thanks to Piotr Kolacz for patch)
+- Fixed:	Some types of exclude filters did not go recursively if the filter excluded the parent folder. Fixed! (Thanks to Piotr Kolacz for patch)
+- Fixed:	Conflict resolution tab is now enabled for the incremental synchronization A -> B or B -> A.
+- Added:	Some more options to change the sync mode to in the sync queue.
+- Added:	Option to change the sync mode of multiple selected items in the sync queue.
+- Added:	Option to enter Regular Expression when filtering for file/directory names. (Feature request: Svend O. Claussen and Alfred Barten).
+- Added:	New Synchronization preset for custom bi-directional Sync.
+- Added:	Options to choose the comparison behavior: comparing file dates/sizes, comparing file attributes and even comparing file contents. (Thanks to Piotr Kolacz for patch)
+- Improved:	Some textual enhancements. (Thanks to Piotr Kolacz for patch)
+- Improved:	Some code cleaning  
+- Known:	Manual is not updated yet
+
+Version 1.45
+- Improved:	'Open' button in the directory chooser dialogs are renamed to 'Select'
+- Added:	Right click context menu item for the synchronization queue to quickly add filters based on time stamps.
+- Improved:	Manual is updated.
+- Fixed:	The timestamp of some parent directories were not set correctly in some odd cases. Fixed!. 
+
+Version 1.45b7
+- Added:	Option to filter the conflicts in the synchronization queue.
+- Added:	Job tree items are now individually editable right from the job tree (feature request Gijs Noorlander and Kmistry) 
+- Improved:	Scrolling of the sync Q is little faster when using slow network drives.  
+- Fixed:	Some extensive log items were not shown. Fixed!
+- Fixed:	A couple of typo's.
+- Fixed:	<time> wild card works again for the job log filename.
+- Fixed:	Right click context menu in the sync queue didn't work for some directory items. Fixed!
+- Fixed:	Fixed the issue in case either DirA or DirB is the root of a drive and the option 'Preserve timestamps of the directories' is set.
+- Fixed:	Filter by DOS attributes did not get persisted quite right in the jobset file. Fixed!
+- Fixed:	Filter by size will not be applied to directories anymore.
+- Fixed:	Synchronize button/menu item will get disabled (again) when analyzing/synchronizing.
+- Fixed:	Progress bars didn't get updated in some cases. Fixed!
+
+Version 1.45b6
+- Added:	It is now possible to enter multiple in-exclude pattern filters in one step in the filter dialog (feature request: Kishormistry)
+- Improved:	Total progress bar updates now smoother.
+- Fixed:	The analysis statistics will get updated also in case the user stops analysis prematurely.
+- Fixed:	Crash at the command line with some set of options.
+- Fixed:	Some log entries did not appear in the global log file (DirSyncPro.log) and the jobset log file. Fixed!
+- Fixed:	Command line generator handles MS Windows shortcuts (of applicable) now.
+- Fixed:	Start Schedule Engine button/menu item will be grayed out too if the schedule engine is started through the command line option.
+- Known:	Manual is not updated yet.
+
+Version 1.45b5
+- Added:	Run menu extended with menu item to shut down the system after that the synchronization is carried out (Feature request: Kishormistry).
+- Changed:	Shut down buttons have now the same color as the rest of buttons.
+- Fixed:	Total progress bar shows the elapsed/remaining time correctly now.
+- Added:	The progress bar indicates that it is estimating the copy speed while copying the first file (feature request: Gerald Spilleman)
+- Known:	Manual is not updated yet.
+
+Version 1.45b4
+- Fixed:	Issue that some converted config files did not open correctly when using the command line.
+- Added:	Option to shut down the system after all synchronization jobs are carried out (Feature request: vikozo)
+- Added:	A 30-seconds count-down dialog in which the user may cancel a planned shut down in DirSync Pro.
+- Improved:	Some minor improvements.
+- Known:	Manual is not updated yet.
+
+Version 1.45b3
+- Added:	Option "iconify" to for the command line to minimize DirSync Pro to the Tray icon on start up.
+- Improved:	Some minor optimizations to the Command line mode.
+- Improved:	Some minor textual enhancements in the job dialog.
+- Improved:	Some minor GUI improvements.
+- Improved:	Additional information is printed in the messages when a file is not readable (Feature request: GHPS).
+- Fixed:	Closing the application window in the latest Ubuntu generated an exception due to lack of the system tray. Fixed!
+- Fixed:	Bug introduced in 1.45a1, schedules were not applied correctly in some cases. Fixed!. 
+- Known:	Manual is not updated yet.
+ 
+Version 1.45b2
+- Added:	'Append' menu item in the File menu to append existing saved jobs to the current jobset.
+- Added:	'Save enabled jobs As' menu item in the File menu to save the enabled jobs into a new jobset file.
+- Added:	The user should confirm removing a job after clicking the 'Remove' button (or through the right mouse click context menu) now. (Feature request: Techhere).
+- Added:	Pop-up menu (right click) in the job tree has now two new options to analyze and synchronize a single job quickly (Feature request: Techhere).
+
+Version 1.45b1
+- Fixed:	Issue with daylight saving introduced in 1.45a1.  
+- Added:	The file size in the Synchronization queue has now a tooltip which shows the size of the file in Bytes.
+- Improved:	Some minor GUI enhancements.
+
+Version 1.45a3
+- Added:	Copying symbolic links as verbatim (creating symbolic links in the destination) for POSIX systems. 	
+- Improved:	Filters view.
+- Improved:	Some GUI enhancements.
+- Fixed:	Issue introduced in 1.45a1 that some modified files were marked as 'conflict files'.
+
+Version 1.45a2
+- Fixed:	The /sync option did not work properly in some cases when running in command line mode. Fixed.
+- Fixed:	New copy algorithm issues. 
+
+Version 1.45a1
+- Added:	New filter option to include/exclude files/dirs an absolute path.
+- Added:	New filter option to include/exclude files/dirs by file permissions (Posix).
+- Added:	New filter option to include/exclude files/dirs by file attributes (MS Windows).
+- Added:	New filter option to include/exclude files/dirs by file ownership properties (Posix).
+- Added:	New filter option to include/exclude files/dirs based on a date (feature request: Gijs Noorlander).
+- Added:	Swap button in Job dialog to swap the source and destination directories.
+- Added:	The file time stamp in the Synchronization queue has now a tooltip which shows the long format of the modification date (including seconds).
+- Added:	DirSync Pro remembers now the last GUI window location and size upon exit and restores them when restarting the application.
+- Added:	Feature to save the configuration upon exit if it is changed (feature request: Gijs Noorlander).
+- Added:	Option in the sync queue popup menu to change all of some sync type to a desired type.
+- Added:	Feature to add quick filters right from the sync queue by the right mouse click. 
+- Fixed:	Some minor issues in the user interface.
+- Fixed:	Some GUI elements didn't look OK with large fonts under Ubuntu. Fixed!
+- Fixed:	Default file filter for the open/save dialogs is now '*.dsc' instead of '*.*'
+- Fixed:	DirSync Pro will not iconify now on (Linux) systems (e.g. Ubuntu) which have unfortunately dismissed the system tray. 
+- Improved:	Lots of code cleaning. 
+- Improved: The date comparison algorithm is less aggressive now. A default tolerance of 2 seconds for granularity is now being respected.
+- Improved:	Redesigned many parts to be able to enjoy Java 1.7 new features.
+- Improved:	Better validation of inputs in the user interface.
+- Improved: When using dual monitor screens, DirSync Pro modal dialogs will now open on the same monitor as the main window.
+- Improved:	Conflict resolution is now expanded with more rare conflict situations.
+- Improved:	New copy algorithm to extremely boost the copy performance and also enjoy the new Java features (Thanks to M. Lux for the contributions).
+- Changed:	The option whether to use NIO or not is deleted. DirSync Pro uses NIO by default now.
+- Changed:	DirSync Pro needs Java 1.7 to run now.
+
+Version 1.44
+- Added:	Right mouse click menu on in the sync queue contains now the option 'Change to:' to change the sync behavior of a single sync item.
+- Improved:	Total synchronization time will now stay shown in the progress bar.
+- Improved:	Online update dialog contains now a hyper link to the update changelog.
+ 
+Version 1.43
+- Added:	Number of analyzed Files and Directories are now shown separately in the stats.
+- Added:	Number of conflicts is now shown in the stats.
+- Fixed:	The program path caused a crash in command line on OS X. Fixed!.
+- Fixed:	The total time is now shown correctly in the upper progress bar during actual synchronization.
+
+Version 1.42
+- Fixed:	Loading an old config file from a previous version did not succeed in some situations. Fixed!.
+- Fixed:	Flickering redundant text in total progress bar is not shown anymore.
+- Fixed:	Total number of Larger Files is now shown correctly.
+- Improved:	Total numbers in stats are now printed in bold. 
+
+Version 1.41
+- Added:	Right mouse click menu on in the sync queue contains now the option 'Delete all selected from sync Q' to remove all the selected tasks from the synchronization queue.
+- Improved:	Manual updated.
+
+Version 1.41rc1
+- Improved:	Manual updated.
+- Fixed:	Source and destination paths are now checked for space char at the beginning/end of the field.
+- Improved: Sync queue tab shows now the number of files/dirs separately.
+- Added:	Right mouse click menu on in the sync queue contains now the option 'Delete all of this mode from sync Q' to remove all tasks of a certain type from the synchronization queue. 
+
+Version 1.41b4
+- Added:	Conflict resoultion is now extended and can be configured in details for custom synchronization modes.
+- Improved:	Some fine tuning with daylight saving options for FAT file systems.
+- Fixed:	Fixed the crash when using periodical backups in combination with 'subst' command (MS Windows XP) in paths.
+- Improved:	Some fine-tunings in the config file syntax.
+- Improved:	Minor cosmetic improvements in the GUI.    
+
+Version 1.41b3
+- Fixed:	Closing the application while synchronizing quits immediately.
+- Fixed:	Conflict detection by 'warning user' in bidirectional sync didn't work properly in some cases. Fixed!.
+- Fixed:	Wildcards issues in log file names. 
+- Added:	Messages table will now scroll to buttom of the list automatically after each analysis and/or synchronization.
+- Improved:	File deletion analysis will occur now prior to file comparison analysis (feature request: spazzpp2).
+- Fixed:	Option for forced deletion of excluded files/folders was not working recursively. Fixed!
+- Improved:	Forced deletion of excluded files/folders is now much faster.
+
+Version 1.41b2
+- Fixed:	Fixed the fuzziness of 'Daylight saving granularity' on some FAT systems.
+- Fixed:	The 'Saturday' option in Weekly Schedule window triggered the 'Sunday' schedule. Fixed!.
+- Fixed:	When the program was executed from another directory other than the program directory, the help file did not initiated. Fixed!.
+- Added:	Option '/schedule' (MS Windows) or '-schedule' (Linux like) to start the schedule engine from the command line (feature request: Jim F).
+- Added:	Option in 'Generate command line' window to add the schedule trigger option to the command line/batch file. 
+
+Version 1.41b1
+- Fixed:	Some minor cosmetic issues.
+- Improved:	Optimized sync behavior a little.
+- Fixed:	Timestamp granularity was not taken into account in combination with the 'daylight saving ignore option'. Fixed! (thanks to Shaun Spiller the patch!).
+- Fixed:	Using some special characters in filters will not crash the program anymore. (thanks to Shaun Spiller for the patch!).
+- Fixed:	Disabled jobs are not taken into consideration anymore when calculating the remaining time.
+- Fixed:	Removing a file pattern filter didn't succeed. Fixed!.
+- Fixed:	Some typos.
+- Fixed:	Minor cosmetic issue in the job tree.
+
+Version 1.4
+- Fixed:	The command line mode didn't initiate synchronization. Fixed!.
+- Fixed:	The command line din't respect the log level. Fixed!
+- Fixed:	Manual section 'Advanced' updated on dirsyncpro.home property.
+- Fixed:	The Edit en Remove buttons in the filter menu were deactivated. Fixed!.
+- Fixed:	Some typo's in de GUI.
+- Fixed:	Open Recent menu is now disabled when the synchronization is running.
+- Improved:	When saving a command line batch file, DirSync Pro shows a warning if the batch file is being overwritten. 
+
+Version 1.4rc3
+- Fixed:	Minor gui issues with the sync table auto resizing.
+- Fixed:	The stop button did not work when Synchronize button was clicked and the sync queue was empty. Fixed!
+- Fixed:	When adding an Hourly, Weekly and Monthly schedule, the next event will be the next coming hour.
+- Fixed:	When a new jobset file is saved as a new file, the Open Recent dialog gets updated right away.
+- Fixed:	Issue with the warning "DirSync Pro started with low memory" is fixed!.
+- Fixed:	Issue with hanging license dialog on some linux systems.
+- Fixed:	The tool tips for the buttons in the Message tab showed wrong text. Fixed!.
+- Improved:	The help file is converted to PDF.
+
+Version 1.4rc2
+- Fixed:	Some typo's.
+- Fixed:	Issue with stuttering/freezing GUI with huge sync queue.
+- Fixed:	Repeatedly opened jobsets will now appear once in the Open Recent submenu item.
+- Improved:	Additional info text in the Generate batch command dialog.   
+
+Version 1.4rc1
+- Fixed:	Schedule constraint 'Timeframe From' and 'Timeframe To' did not affect correctly. Fixed!
+- Fixed:	When editing a schedule in the schedule dialog, the basic tab was disabled. Fixed!
+- Fixed:	Auto-resizing of the last column in the schedule queue did not work. Fixed!
+- Fixed:	Some weekdays of the Weekly schedules did not get persisted to the saved config file correctly. Fixed!
+- Fixed:	Issue that Cancel button in the schedule dialog saved the schedules anyway. Fixed!
+- Fixed:	Weekly and Monthly schedule were sometimes inaccurate. Fixed!
+- Fixed:	Warning of unsaved config appeared twice in some cases. Fixed!
+- Fixed:	Some cosmetic issues in the GUI.
+- Fixed:	Editing a schedule will reload the schedule engine without having to restart it.
+- Fixed:	Synchronizing the time-stamps of the directory works now also for exisiting directories.
+- Fixed:	'Open Recent' submenu gets updated right after loading a jobset file now.  
+- Improved:	The items in the 'Open Recent' submenu have now a tooltip which shows the absolute path to the file.
+- Improved:	Schedule start button will get now disabled if clicked once.
+- Improved:	A Yes/No dialog is shown if the schedule engine is running and the user want to close the application, to load a new config or to create a new one.
+- Improved:	Schedule engine queue scrolls now horizontally if the table gets wider than the application window.
+
+Version 1.4b4
+- Added:	Implemented the 'Schedule Minutely' function to schedule a job recurrently every X minutes (feature request: Carlos).
+- Added:	Status line on the schedule queue tab which shows the status of the schedule engine.
+- Added:	Exit codes if an error has happened while synchronizing in batch mode: 0= Finished with No Errors, 1=Finished with Warnings or Non-fatal Errors, 2=Stopped due to fatal errors (feature request: Matthias Gutheil).
+- Added:	DirSync Pro is now able to create three types of logfiles: 1) Job specific log file which contain the events of a job, 2) Jobset log file which contain the events of all the jobs within the jobset, 3) Program log file which contain the events of all jobsets. 
+- Fixed:	'Default Config Path' and 'Default Log Path' issue is resolved.
+- Fixed:	Redundant 'Aborted' warning in the messages.
+- Fixed:	Done some rewriting on Logs to fix the issues around logs not being created in some cases. 
+- Fixed:	Changing the application settings will not clear the message tab.
+- Fixed:	After filtering the generated sync queue, it was not possible to remove individual entries from the queue. Fixed!.
+- Fixed:	Look & feel issue in 'Java Metal theme' with the buttons 'Expand/Collapse All' and 'Enable All/None' is Fixed.
+- Fixed:	Look & feel update issue for modal dialogs in 'Java Metal theme' is fixed.
+- Improved:	The filename columns in the Sync queue table are now resizable.
+- Improved: The file size/date columns int he Sync queue get now automatically resized after Analyze/Synchronize actions. 
+- Improved:	After loading a jobset or after creating a new one, the main tab jumps back to the Jobtree tab.
+- Improved:	All the sub-dialogs are now decorated with DirSync Pro icon. 
+
+Version 1.4b3
+- Added:	Option (in Tools menu) to automatically generate a command line to run DirSync Pro in batch.
+- Added:	Option to copy the generated command line to the clipboard.
+- Added:	Option to save the generated command line to a batch file (MS Windows: .cmd, Linux-like: .sh).
+- Added:	Option to ignore daylight saving granularity which could be useful when synchronizing between FAT and other file systems around the daylight saving period (Feature reguest: Jim Carroll)
+- Added:	"Open Recent" submenu to quick pick the most recent 8 opened config files (feature request: A. Parsons).
+- Fixed:	The bug when the license dialog appeared twice.
+- Fixed:	Missing "'" behind the Includes tree node in the job tree.
+- Fixed:	A typo in schedule dialog.
+- Fixed:	Bug with enabling/disabling the log file of a job is fixed.
+- Fixed:	Some tooltips contained old data. Fixed!.
+- Fixed:	In some cases the job specific log files got disabled in the GUI after sync. Fixed!.
+
+Version 1.4b2
+- Added:	Option to synchronize directory timestamps, relevant for MS Windows (feature request: Gijs Noorlander).
+- Added:	Option to load the last loaded config automatically upon start-up (feature request: Gijs Noorlander and A. Parsons).
+- Added:	Option to keep the sync queue after the synchronization so that it can be run again. This might help in case some items are not synchronized because of file system errors (feature request: Gijs Noorlander). 
+- Improved:	Definitive icons for schedule types.
+- Improved:	Some minor improvements.
+- Fixed:	Wild cards were skipped in some cases, fixed!.
+- Fixed:	Copy options to all/enabled jobs will also copy the schedules.
+- Fixed:	Loading a config file after right a synchronization warning/error was not possible. Fixed!.
+- Fixed:	Issue with the Synchronize button not starting the synchronization in some cases..  
+
+Version 1.4b1
+- Added:	Implemented the 'Schedule Once' function to schedule a job on a certain time in the future.
+- Added:	Implemented the 'Schedule Hourly' function to schedule a job recurrently every X hours.
+- Added:	Implemented the 'Schedule Daily' function to schedule a job recurrently on a certain time every X day.
+- Added:	Implemented the 'Schedule Weekly' function to schedule a job recurrently on a certain time and on specific weekday every X week.
+- Added:	Implemented the 'Schedule Monthly' function to schedule a job recurrently on a certain time and in specific month every X month.
+- Added:	A new dialog is introduced to define all above schedule types for a job.
+- Added:	A new tab is introduced in Edit Job dialog to view, add, edit and remove schedules for each job.
+- Added:	A schedule engine which takes care of all schedules of all jobs.
+- Added:	A new tab is introduced in the main window to view all active schedules inclusive up-coming events.
+- Added:	New buttons and menu items are added to the short-cut bar and the 'Run' menu.
+- Added:	System tray icon and feature in the application options dialog to minimize to system tray. 
+- Improved:	Some changes to file analysis algorithm to improve the speed enormously.
+- Improved:	The total progress is now more transparent en intuitive
+- Improved:	DirSync Pro generates now a warning if JRE is started with memory lower than 512MB.
+- Improved:	After converting an old-formatted config file, it is loaded automatically.
+- Improved:	It is now impossible to edit a job when the analysis/synchronization is running.
+- Improved: The user gets a warning if there are unsaved changes to the job settings, while opening a config file ore creating a new one
+- Improved:	The linux run-script is improved to run also from directories including the space character.
+- Improved:	If the synchronization/analysis is finished and an error has occurred, the GUI switches to the Messages tab.
+- Improved:	"Synchronize A -> B (incremental)" and "Synchronize B -> A (incremental)" are now called "Mirror A -> B (incremental)" and "Mirror B -> A (incremental)".
+- Improved: Possible range for the granularity is now 1-86401 (1 second to a just over a day) which make it possible to work around the daylight saving time problem on FAT systems.
+- Improved:	'GB' (Gigabyte) abbreviation added and implemented for the Sync Queue.
+- Improved:	Many minor improvements.
+- Fixed:	The GUI is now rendered fine on some Linux distro's when choosing 'System look&feel' in combination with very large fonts. 
+- Fixed:	It is now possible to delete excluded files from both Dir A and Dir B separately
+- Fixed:	Null Pointer Exception on some JRE's after editing a job. Fixed!
+- Fixed:	DirSync Pro icon on Windows 7's task bar is not blurry anymore!
+- Fixed:	Many minor issues. 
+
+Version 1.32
+- Fixed:	"Tools -> Swap all source & destination directories" will update the job tree now.
+
+Version 1.31
+- Added:	It is now possible to delete every individual entry (file/directory) from the synchronization queue by right mouse clicking it.
+- Added:	New dialog to edit filters.
+- Added:	Filtering files (include/exclude) based on file sizes (smaller/equal/larger).
+- Added:	Double clicking the job title in the job tree will open the edit dialog
+- Added:	Right mouse clicking the job title in the job tree will open he edit dialog
+- Improved:	Clicking the job title in the job tree will not (un)check the enable/disable checkbox
+- Improved:	Opening a file or its path right from the sync queue (using right mouse click) is more reliable for files on the network shares or when file contains special characters.
+- Improved:	Double clicking the root node in the job tree, does nothing now
+- Improved:	Job edit dialog has now a title
+- Improved:	Filenames are now left justified in the current progress bar while copying.
+- Improved:	Logs are now appended to existing logfiles.
+- Improved: The user gets a warning if there are unsaved changes to the job settings, while closing DirSync Pro
+- Improved:	Some icons updated.   
+- Fixed:	The issue with the command line option /quit during the analyze mode is fixed.
+- Fixed:	Granularity bug fixed! (Many thanks to Angelo D'Agnano for the solution!)
+- Fixed:	Bug when forcing the deletion of excluded dirs/filee.
+- Fixed:	Sync modes 'Backup and Restore' work  fine now.
+- Fixed:	Disabling/enabling a Job in the job tree will updade the tree right away.
+- Fixed:	'Copy Option to All/Enabled Jobs' work now fine again..
+- Fixed:	Some output lines at SDTOUT were written twice. Fixed!
+- Fixed:	If the global log is enabled, it will also be created when using the command line mode. 
+- Fixed:	Some typo's.  
+- Fixed:	Some minor issues.
+
+Version 1.3
+- Improved:	Toolbar buttons have now new tooltips to reduce confusion between New buttons for the job and the job set.
+- Improved:	Help files are updated.
+- Fixed:	In some cases it was not possible to suppress the log creation. Fixed!.
+- Fixed:	Some minor issues.
+
+Version 1.3b5
+- Fixed:	Quick Sync Modes set now the delete options correctly.
+- Fixed:	The synchronized files in the sync queue are visible again after the sync.
+- Fixed:	Updating the job settings clears the sync queue.
+- Added:	It is now possible to open the files and directories in the System File Explorer by right clicking the entry in the sync queue.
+- Fixed:	Some minor issues.
+
+Version 1.3b4
+- Improved:	Stopping a synchronization will always clear the sync queue.
+- Fixed:	Starting the synchronization initiates the analysis (again) if no analysis is already carried out.
+- Improved:	'Backup & Log' tab in the Job dialog are separated now.
+- Added:	Information boxes in the Job dialog are written out now.
+- Added:	Checkbox in the job tree to enable/disable a job
+
+Version 1.3b3
+- Fixed:	Job options were not set correctly in the GUI when using a custom mono direction synchronization. Fixed!
+- Fixed:	DirSync Pro does not crash anymore when a modification date of file is unreadable (e.g. due to file corruption). It just shows a warning now.
+- Added:	Reset job settings in the 'Actions' tab is implemented.
+
+Version 1.3b2
+- Improved:	Synchronization performance is improved to be even faster.
+- Added:	The Jobs in the job tree have a tool tip now.
+- Added:	Pop-up menu in the job tree (right-click) is now decorated with icons. 
+- Fixed:	Error while converting an old configuration to the new format.
+- Added:	Creating a backup of the configuration file before it is converted to the new format.
+- Fixed:	Some minor issues.
+
+Version 1.3b1
+- Changed:	Directory profile is now called 'job' to be intuitive. This is also convenient as we may have scheduling in the near future. ;-)
+- Added:	A new approach to setting up a job is implemented to be more user friendly. The GUI is changed a lot to support this approach.
+- Added:	Some pre-configured quick modes are added to easily set up mostly used sync configurations.
+- Changed:	The tab orientation of the Jobs, Sync Queue and Messages is changed to the bottom to fit better in the new GUI.
+- Improved:	The GUI window is resizable now so the users with lower resolution could still use DirSync Pro without having to shift the screen.
+- Improved:	Similar options of the job settings are now grouped into separate tabs.
+- Changed:	The list of jobs is changed to a visual tree.
+- Changed:	You need to open an edit dialog to edit a job setting now.
+- Changed:	Default setting tab is withdrawn to reduce complexity. You can now easily copy options to some or all directories.
+- Improved:	When you choose to swap all the source and destination directories, a confirmation dialog will appear.
+
+Version: 1.24
+- Fixed:	In some cases the default log file was generated regardless of settings. Fixed!.
+- Fixed:	Filtering the synchronization Q works properly again now.
+- Added:	The destination directory will now be created if it does not exist.  
+- Fixed:	Some minor issues. 
+
+Version: 1.23
+- Fixed:	A typo fixed in the GUI.
+- Added:	New option in the 'Options window' to set the default path for log files to the program folder
+- Added:	New option in the 'Options window' to set the default path for config files to the program folder.
+- Added:	New button to clean the messages log
+- Added:	New option in the 'Dir Settings tab' to enable/disable logging for the directory profile.
+- Added:	New option in the 'Default Settings tab' to disable/enable logging when the directory profile is set to default settings.
+- Added:	The update dialog shows now the major changes since the last version.
+- Improved:	Illegal characters in the directory profile label are now replaced with '_' when using the label as a file name for logging.. 
+- Fixed:	Default logging for directory profiles is now set back to 'disabled'.
+- Fixed:	Warnings on bidirectional conflict resolution are now shown properly.
+- Fixed:	Some textual errors are fixed in the Help files.
+- Fixed:	Some minor issues.		
+
+Version: 1.22
+- Fixed:	Error when loading a saved configuration with no log filename defined.
+
+Version: 1.21
+- Fixed:	Log file home dir is now set properly through the options window.
+- Fixed:	Deleting redundant files/directories works now fine in reversed sync directions.
+- Fixed:	'Beta' notification is now deleted from the license window; version 1.2/1.21 is marked as stable.
+- Fixed:	Some minor issues.
+- Improved:	Help is extended with an 'Advanced features' section covering some advanced stuff. 
+
+Version: 1.2
+- Improved:	The default directory for saving the DirSync Pro settings is now: 'user_directory/.DirSyncPro'.
+- Added:	Option to set the default DirSync Pro home directory 
+- Fixed:	New empty directories were always synchronized regardless of the directory profile. Fixed!
+- Fixed:	Directory Progress Bar showed sometimes a weird character . Fixed!
+   
+Version 1.2b4
+- Added:	It is now possible to filter the messages for Info's, Warnings, Errors and File operations.
+- Added:	The total progress bar shows now the elapsed and estimated total analysis/synchronization time.
+- Added:	Added scroll bars to the directory profile list.
+- Fixed:	Some GUI pop-ups were opened occasionally in the commandline mode. Fixed!
+- Fixed:	View and Sync didn't work properly. Fixed!
+- Fixed:	Prior to each 'Analyze' the filtered queue is reset.
+- Fixed:	Excluded deletion bug is fixed.
+- Improved:	'Preview' is renamed to 'Analyze' in the command line mode.
+- Improved:	The size of a directories is not shown in the synchronization queue.
+- Improved:	Some cosmetic improvements.
+
+Version 1.2b3
+- Added:	It is now possible to make a selection of files to be synchronized in the synchronization queue.
+- Added:	It is now possible to make a selection of files to be shown in the synchronization queue.	
+- Fixed:	The current progress bar was hanging on zero. Fixed!
+- Fixed:	Pause and Stop button work in all cases now.
+- Fixed:	Duplicating and adding directory profile works fine again.
+- Fixed:	The in-/exclude dir/files didn't affect sometimes, mostly for deleting those files. This is fixed.
+- Fixed:	Deleting a corrupted and locked file will not cause a crash anymore. 
+- Improved:	Moderate log shows now the name of the copied files.
+- Known issue: 
+			The 'View' tab under Messages will be implemented in the next beta version
+			
+Version 1.2b2
+- Improved: Copy process is optimized with a CopierFactory to use BufferdStreams if no NIO is selected. The copy buffers are also smaller (as large as possible). Thanks to Toj for the patch!
+- Fixed:	Log level bug fixed
+- Fixed:	In some rare cases some modified files showed up twice in the sync queue. This is fixed.
+- Fixed:	Bidirectional sync conflict resolution by renaming works fine now.
+- Fixed:	Reset the progress bars if a sync error occurs.
+- Fixed:	No crash if a network file returns an error; just show a warning message.
+- Fixed:	Backup folder is left behind when analyzing for deletion.
+- Fixed:	Performance issues: In some cases the same sync queue got synced several times. It happens now only once which is much faster.
+- Fixed:	No crash if a file is is unreadable or blocked; just show a warning message..
+- Known issue: 
+			The 'Sync' tab under Sync Q will be implemented in the next beta version
+			The 'View' tab under Sync Q will be implemented in the next beta version
+
+Version 1.2b1
+- Improved:	The sync engine is rewritten completely for a better performance, better memory usage and to support some (upcoming) features.
+- Improved: Before the actual synchronization starts, a queue list will be generated. When you synchronize, only the queued (analyzed) items will be synchronized.
+- Added:	The GUI is updated to show the Sync queue. You'll now get for each pair of files information like the modification dates and file sizes in the Sync queue.
+- Added:	Synchronization statistics are now calculated and shown in the GUI. 
+- Changed:	Directory is now called Directory Profile.
+- Improved:	Analyzing (formerly known as previewing) is done once now. If you have already analyzed your sync and you may want to synchronize, the synchronization will start immediately.
+- Changed:	The text pannels (outputs) are converted into a message queue in which the messages will be shown.
+- Fixed:	The synchronization will not get slower when synchronizing massive number of files.  
+- Changed:	The possible log levels are now: Minimal(events, warnings, errors), Moderate(events, warnings, errors and configuration data), Excessive (events, warnings, errors, configuration data and filenames)
+- Improved:	Shiny 48x48 bit Windows program icon
+- Improved:	The log file handling is optimized. Some reported problems are fixed.
+- Fixed:	Some spelling errors
+- Improved:	Lots and lots of code cleaning.
+- Fixed:	Lots of minor issues.
+- Known issues: 
+			The 'Show' tab under Sync Q will be implemented in the next beta version
+			The 'Sync' tab under Sync Q will be implemented in the next beta version
+
+Version 1.02
+- Fixed:	Verifying an opened file by another process caused a crash. This is fixed. You'll get now a warning that the file verification is failed..
+- Improved:	The file pattern text fields are now checked whether they contain the illegal character '\'..
+
+Version 1.01
+- Fixed:	The default log file setting was not saved. This is fixed
+- Fixed:	Some spelling errors in the GUI
+
+Version 1.0
+- Changed:	The default Java copy mode is now NIO. The old fashioned Java copy mode can now be forced through options dialog.
+- Added:	Forced-deleting excluded feature is added. You can now force deleting the excluded files/directories from the destination folder
+
+Version 1.0b9
+- Added:	Conflict handling for files in bidirectional sync when files are modified separately in two directories
+- Added:	Option in Directory Settings to handle the sync conflict in bidirectional mode.
+- Added:	Option in Default Settings to handle the sync conflict in bidirectional mode.
+- Fixed:	The progress bars get reset when opening or creating a new directory configuration.
+- Changed:	The algorithm for searching files is optimized to run faster.
+- Changed:	Some icons are replaced with new ones.
+- Changed:	The GUI is optimized according to the users feedbacks.
+- Changed:	Filenames in the output are now colored blue and violet corresponding to DirA & DirB.
+- Changed:	The default log level is now "Moderate".
+- Code:		Some enhancements/clean-ups.
+
+Version 1.0b8
+- Fixed:	Some textfield elements in the GUI grew when typing. This is fixed.
+- Fixed:	In version 1.0b7 selecting a label did not show the corresponding output. This is fixed.
+- Fixed:	Few spelling corrections in the GUI.
+- Fixed:	Pushing the "Go to Download page" button on the update dialog now opens the browser if new updates are available.
+- Changed:	Some tooltips are updated.
+- Changed:	Some icons are polished.
+- Added:	The feature to select a folder for back-up files. It is now possible to save the backups anywhere you wish.
+- Code:		Some clean-ups
+
+Version 1.0b7
+- Fixed:	Command-line mode crash. This is fixed.
+- Added:	Check for update button in the options menu to verify if there is a new version of DirSync Pro is released.
+- Added:	Option to check automatically check for new program versions on start-up.
+- Code:		Some clean-ups
+
+Version 1.0b6
+- Fixed:	Changing the default in-/excludes are now reflected to the directory settings when SameAsDefault is selected.
+- Fixed:	In some cases the progress bars were not updated accurately. 
+- Fixed:	On some fast machines with fast file systems the GUI seemed to be hanged during synchronization of massive number of small files.
+- Fixed:	Changing the default log caused extra logfile creations. This is fixed
+- Changed:	SwingWorker is being used from java.swingx now. As a result Java 1.6 or higher is required to run DirSyncPro.
+- Added:	Debug information for the excessive mode to show the default in-/exclude settings.
+- Added:	Internationalization feature is enabled. In the near future it would be possible to select a language for the GUI. 
+			Please let me know if you're interested in translating DirSync Pro to your language (please see DirSync Pro 'About' for contact details)
+- Code:		Some clean-ups
+
+Version 1.0b5
+- Added:	Bidirectional Sync support. It is now possible to set the directories to be synced bidirectionally (both ways).
+- Added:	Sync Mode button which shows/changes the Sync direction: A to B, B to A and Bidirectional.
+- Fixed:    Sync progress bar was shown as 0%; this is fixed.
+- Fixed:	Save As button & menu item are disabled during sync/preview.
+- Fixed:	Polished the 'Start' icon in the Run menu to look better.
+- Changed:	Directory paths Swap button is removed as this is not needed anymore while direction is set using the Sync Mode. 
+- Changed:	The GUI is optimized to fit in smaller screens
+- Changed:  The default log level is now Normal.
+- Changed:  Default copy mode is now: CopyNew and "Copy Modified".
+- Code:     Some clean-ups.
+
+Version 1.0b4
+- Added:	There are now separate release files for Win32, Linux, NoArch platforms.
+- Changed:  DirSync is renamed to DirSync Pro now.
+- Changed:	The output tabs are renamed to cover the purpose more clearly.
+- Changed:	The progress bars are set to 0% after being done with (preview of the) synchronization.
+- Changed:	Now using Launch4j to create more shiny icon for windows wrapped executable
+- Fixed:    GUI is optimized to run smoothly under linux despite any native font-sites/window decorations.
+- Fixed:    Settings window is now a dialog (modal problem).
+- Fixed:	Auto-enabling/-disabling of Directory Copy Options.
+- Fixed:	In CopyAll / CopyLargerModified mode the filenames were in some cases not printed in the output. 
+- Code:     Some clean-ups.
+
+Version 1.0b3
+- Added:   ReadMe.txt file with some essenatial info for the beginners
+- Added:   "Save As" function in the menu and in the toolbar.
+- Added:   The location of the last opened/saved config file is now being remembered.
+- Fixed:   The help file is updated regarding 'enabled' attribute persistance.
+- Fixed:   Dubble log printing is fixed. 
+- Changed: After saving a config file, the default logfile gets renamed automatically if it is nog manually changed.
+- Changed: Initial config file behavior is improved.   
+- Changed: Some icons are replaced with more shiny ones.
+
+Version 1.0b2: Changes log since last version
+- Added:   NetBeans project meta files added back in the source package.
+- Added:   Eclipse project meta files added in the source package.
+- Added:   A new config file has an initial name now.
+- Added:   The Options window has a proper icon now.
+- Fixed:   Closing the option window (with X) now disposes the window and will not close the DirSyn application. 
+- Fixed:   Progress bar is set to 100% also after synchronization.
+- Fixed:   Preview button is disabled while syncing.
+- Fixed:   Unnecessary buttons are disabled while previewing/syncing.
+- Fixed:   Unnecessary default options are disabled while previewing/syncing.
+- Fixed:   Unnecessary dir options are disabled while previewing/syncing.
+- Fixed:   Save menu option is disabled while syncing/previewing.
+- Fixed:   The user wild card is now working with the global log.
+- Fixed:   some bugs in default/dir log.
+- Fixed:   After chaning the Default Config Path the current path is updated immediately.
+- Fixed:   IOException error when reading from a file which was in use (locked by another program). 
+- Fixed:   Enable status of the directories are now persisted {Thanks to Gilles Saint-Denis for the fix}.
+- Fixed:   Include/Exclude bug fix {Thanks to Gilles Saint-Denis for the fix}.
+- Changed: When "Same as default" is selected the log is also written to the default log. 
+- Changed: New DirSync icon.
+- Changed: Title bar cosmetically resltyled, program version number included in the title bar.
+- Changed: The Default log is initially enabled.
+- Code:    Some clean up.
+- And many more minor fixes.
+
+V 1.0b1: Changes since last version
+- Added: Setting options menu
+- Added: Setting options window
+- Added: Default settings for synchronization and regarding GUI modifications
+- Added: feature that new added directories are numbered.
+- Added: feature that copied directories are numbered.
+- Added: button to swap current source & destination dirs
+- Added: Log level (normal, moderate and excessive)
+- Added: Showing License Window for the very first time
+- Changed: Advanced options are replaced into the settings options window
+- Changed: Default copy mode: Copy New, Copy Modified & Copy Larger
+- Changed: Default "Include Subfolders"
+- Changed: Default look & feel is now "System Native Window" 
+- Changed: Some new icons 
+- Changed: The windows are now located in the middle of the screen.
+- Fixed: The output window is not editable anymore
+- Fixed: The progress bars have the same length now
+- Fixed: The current progress bar has now an initial percent
+- Fixed: The current progress bar gets "100%" when finished
+- Cosmetic: Unnecessary tooltips deleted.
+- Some code clean-up.
+
+changes since 0.91
+
+new features/enhancements:
+- You can now select to keep multiple backups of changed or deleted files. 
+  The backups are stored in a new directory structure in a new subdirectory of the destination directory named ".DirsyncBackup".
+  The backup files have the original filename with "_##" appended before the extension, where "##" is the increasing number of the backup
+  ("00" is the latest backup, "01" is the backup before "00" and so on).
+- date wildcards in the global log file
+  if you write "<date>", "<DD>", "<MM>", or "<YYYY>" in the filename of the global log file this will be replaced by the current date
+- added buttons to scroll to the next directory, warning, or error in the output area
+- new wildcards "<username>" and "<userhome>"
+- renamed wildcard "<name>" to "<dirname>"
+- renamed wildcard "<global>" to "<globallog>"
+
+
+solved bugs:
+- fixed some more NullPointerExceptions when in console mode 
+- fixed a bug where the wildcards (e.g. "<date>") would be written back to the directory definition
+- fixed a bug on windows where String.replaceAll would be confused by backslashes
+- cleared up wildcards
+
+
+cosmetical:  
+- changed some help texts 
+
+
+
+changes since 0.9
+
+solved bugs:
+- if a log file can not be created (e.g. because of access rights) logging will be disabled 
+  (global log leads to error, log of a directory definition only leads to a warning)
+- if a file can not be accessed only a warning is issued (before a critical error was issued and the synchronization was halted).
+- all text fields produce key events (if you enter e.g. exclude masks and change the directory definition no changes will be lost)  
+- if you select a directory instead of a file as log for a directory definition a line-separator intead of a file-separator was added
+  (thanks to S. Stobbe)
+- file extensions are now added even if another file extension was given => all configuration files end with the default extension
+  (thanks to S. Stobbe)
+- fixed some NullPointerExceptions in FileTools when in console mode 
+  (thanks to MikeyT)
+- the global log is initialized before saving the configuration.
+
+new features/enhancements:
+- new wildcards in the directory definition log filename:
+  "<global>" for the path of the global log
+  "<name>" for the name of the current directory definition.
+  (e.g. use "<global>\<name>.log" on windows respectively "<global>/<name>.log" on linux to have your current log in the same directory 
+   as the global log, named as the current directory definition)
+- display paths in ""
+
+changes since 0.9rc1
+
+solved bugs:
+- options start with "/" on windows and with "-" otherwise 
+  (so an absolute path on linux will work correctly) 
+- program icon should now be displayed no matter where you start DirSync from
+- the same file will no longer be copied several times because it fulfills different criteria (e.g. larger and modified) (thanks to T. Brixel)
+- under some circumstances the styles for output were not initialized or got corrupted
+- solved bug while copying directory definition
+
+new features/enhancements:
+- Handling of timestamp related problems and symbolic links are now global
+- button to copy config of current directory definition to all directory definitions
+- button to copy config of current directory definition to active directory definitions
+- Tool to switch source and destination directory in all directory definitions
+- NIO for faster sync (thanks to D. Caravana)
+- new checkbox "Scroll automatically" for automatically scrolling the output 
+- there are now separate include and exclude patterns for files and directories (thanks to R. Williams)
+- an error in one directory now only stops deletion in this directory
+- enable/disable per directory (via double click or popup menu)
+- buttons "enable all dirs" and "disable all dirs"
+- preview automatically disables dirs with "nothing to do"
+- name of current config is displayed in the title bar
+- removed all properties except "dirsyncpro.gui.systemlookandfeel" and "dirsyncpro.config.path" which can be changed via the GUI
+
+cosmetical:  
+- new and more icons
+- output with icons
+- gui messages for "help", "usage" and command line errors
+
+
+changes since 0.9beta3
+
+solved bugs:
+- relative paths no longer produce an exception with java 1.4
+
+- files excluded from sync will be deleted at dest if option "delete files" is selected
+
+- if destination file is unwritable no longer a message stating that the source file could not be read is generated
+
+- solved bug with default values for properties
+
+- solved bug with error handling in copy()
+
+- solved bug that sometimes the message "source file locked by another process" came up when really the destination file was not accessible
+
+new features/enhancements:
+- new file extension "dsc" ("cfg" is used by too many other applications)
+
+- file progress shows current file (thanks to D. Caravana)
+
+- new property "dirsyncpro.gui.systemlookandfeel"
+When true the look and feel of the os is used
+
+- GUI locked during synchronization
+
+- date and time wildcards in destination directory and log file (thanks to T. Groetzner)
+if you write "<date>", "<DD>", "<MM>", or "<YYYY>" in the filename of the destination directory or the log file this will be replaced by the current date
+if you write "<time>", "<hh>", "<mm>", or "<ss>" in the filename of the destination directory or the log file this will be replaced by the current time
+
+- "quit" waits for synchronization of current file to finish
+
+- properties file "dirsyncpro.properties":
+If the properties file "dirsyncpro.properties" exists (normally in the current directory) then it is read and the properties are added as system properties.
+
+- new property "dirsyncpro.home":
+if "dirsyncpro.home" is set the properties file "dirsyncpro.properties" is searched in the specified directory instead of in the current directory
+(useful if specified on the command line - not in the properties file it's location it sets :-).
+
+- new property "dirsyncpro.config.path":
+If this property is specified, then "Save Config" and "Load Config" use this directory.
+
+- new property "dirsyncpro.pattern.casesensitive"
+if this property is set to "true" includes and excludes are case sensitive. Defaults to case insensitive on windows and case sensitive otherwise
+
+- new properties "dirysync.date.format" & "dirysync.time.format"
+used for filling in "<date>" and "<time>" (see above)
+
+
+cosmetical:  
+- messages in color
+- progress now includes the currently processed (copied or deleted) file or directory
+- excluded files are listed
+- new icon for "preview" (old icon looked "deactivated" to some people)
+- more debug information generated and written to log
+- dialog box displayed in case of fatal error
+
+---
+
+changes since 0.9beta2
+
+solved bugs:
+- Solved bug when copying whole drive under windows
+- Don't create "dirsyncpro.log" at startup
+- Solved possible "division by zero" in empty directories
+
+new features/enhancements:
+- supplied windows "jsmooth" executable wrapper
+- new preview mode; the synchronization is displayed with all actions that would be
+  taken, but nothing is changed for real.
+- new option "Skip symbolic links" 
+  (if checked symbolic links are skipped; if unchecked symbolic links are copied as files).
+- new property "dirsyncpro.help.path" to specify where the help is located
+  (to use specify "java -Ddirsync.help.path=/usr/share/doc/dirsyncpro dirsyncpro/Dirsync") 
+- new command line option "/preview": 
+  start preview only (instead of synchronization) if configuration is specified
+- new command line option "/quit": 
+  quit after doing synchronization or preview
+  
+cosmetical:  
+- DirSync now no longer calls itself "Synchronize" ;-)
+- moved "Write timestamp back to source file" and "skip symbolic links" to "Advanced options"
+- new application icon
+
+---
+
+changes since 0.9beta1
+
+solved bugs:
+- Solved GUI bug/exception using "New Config"
+- Solved GUI bug using "Load Config"
+- if the directory for a logfile doesn't exist it is now silently created (before sync failed)
+
+new features/enhancements:
+- commandline parameters "/usage", "/help" "/nogui"
+- Save and Load Config now remember filename and directory
+- Only print what has been done or "Nothing to do." as result (not "(Copy All) files copied: 0", etc.)
+- introduced "WarningException" to report warnings
+- message what to do if fatal error occurs
+
+cosmetical:
+- renamed "Copy options" to "What to copy"
+- renamed "Recursive options" to "How to copy"
+- renamed "recursive" to "with subfolders"
+- moved "checksum" option to "How to copy" and renamed it to "verify"
+- changed XML attribute from "checksum" to "verify"
+
+- Added checkbox for "write timestamp back to source file"
+- added new XML attribute "timestampfix"
+- added "timestampfix" to XML DTD
+
+- use ErrorException to report errors instead of SyncFailedException (SyncFailedException is a java exception used for something different)
+
+- new favicon for Homepage
+- updated documentation

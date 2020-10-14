@@ -1,0 +1,9 @@
+1. Disclaimer of Warranty
+DirSyncPro IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY; THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE COPYRIGHT HOLDERS PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+2. License
+DirSyncPro is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. The file GPL.txt which is provided along with DirSync Pro, contains a copy of the GNU General Public License. If you could not find this file, see <http://www.gnu.org/licenses/>. 
+The icons used in DirSync Pro are from the Kommon Desktop Environment KDE (www.kde.org) released under the GPL.
+
+3. Disclaimer of 'Check for updates'
+By default (every new version of) DirSync Pro checks for program updates as soon as the program is started (and the license is accepted). Except in the unstable versions, you may disable checking for updates in the Options menu (Tools > Options). When checking for updates, DirSync Pro will send ONLY the current program alphanumeric version indication (for example '1.51' or '1.51b1') to the update server to verify if a newer version is released.
